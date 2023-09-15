@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import Services from "../components/Services";
 import Blog from "../components/Blog";
 import Metrics from "../components/Metrics";
+import Footer from "../components/Footer";
 const Home = () => {
   return (
     <HomeWrap>
@@ -11,6 +12,7 @@ const Home = () => {
       <Services/>
       <Blog/>
       <Metrics/>
+      <Footer/>
     </HomeWrap>
   );
 };
