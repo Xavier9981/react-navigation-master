@@ -48,6 +48,10 @@ function Footer() {
           </div>
         </div>
       </div>
+      <div className="footer-bottom">
+        <p>Copyright HELSB-ICT @ 2023 | All rights reserved</p>
+        <p><a href="#">Privacy policy</a></p>
+      </div>
     </FooterSection>
   )
 }
@@ -61,11 +65,18 @@ const FooterSection = styled.section`
     display: flex;
     color: #fff;
     justify-content: center;
-    gap: 5rem;
+    gap: 15%;
 
     div:nth-child(1) figure{
       background-color: #fff;
-      border-radius: 15px;
+      border-top-right-radius: 4rem;
+      border-bottom-left-radius: 4rem;
+      display: flex;
+      padding: 0.5rem 2rem;
+
+      a{
+        margin: auto;
+      }
     }
 
     .wrap-footer-links {
@@ -105,6 +116,14 @@ const FooterSection = styled.section`
         }
       }
     }
+  }
+
+  .footer-bottom{
+    border-top: 1px solid #6c757d;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding-top: 10px;
   }
   
 

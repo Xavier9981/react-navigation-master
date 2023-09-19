@@ -1,5 +1,5 @@
 import React from 'react'
-import { BsExclamationLg } from "react-icons/bs";
+import { BsDot } from "react-icons/bs";
 import styled from "styled-components";
 import carolImg from "../assets/Carol-img.jpg"
 
@@ -9,7 +9,7 @@ function Hero() {
       <div className="heroWrap">
         <div className="heroIntro">
           <div className="introText">
-            <h2>It is possible <BsExclamationLg/></h2>
+            <h2>It is possible <BsDot/></h2>
             <p>We’re a Non-discriminatory, Dynamic, Visible and Accessible provider of Student Loans and Scholarships for higher education to eligible Zambians.</p>
             <p>With HELSB any eligible Zambian can get a Student Loan or Scholarship, check if you’re a beneficiary.</p>
           </div>
@@ -30,7 +30,7 @@ function Hero() {
 
 const HeroSection = styled.section`
   padding: 5rem 2.5rem;
-  min-height: 100vh;
+  min-height: 60vh;
   display: flex;
   justify-content: center;
 
