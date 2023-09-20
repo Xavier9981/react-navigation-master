@@ -58,7 +58,9 @@ function Footer() {
 
 const FooterSection = styled.section`
   background-color: #18416d;
-  padding: 5rem 4rem;
+  padding-inline-start: 5rem;
+  padding-inline-end: 5rem;
+  padding-block-start: 4rem;
 
 
   .footer-links{
@@ -123,7 +125,15 @@ const FooterSection = styled.section`
     display: flex;
     justify-content: space-between;
     color: #fff;
-    padding-top: 10px;
+    margin-block-start: 3.5rem;
+    padding-block-start: 1.5rem;
+    padding-block-end: 1.5rem;
+    p{
+      font-size: 14px;
+      a{
+        color: #fff;
+      }
+    }
   }
   
 

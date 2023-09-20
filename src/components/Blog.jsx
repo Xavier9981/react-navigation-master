@@ -55,6 +55,7 @@ function Blog() {
         font-size: 30px;
         margin-block-start: 2.5rem;
         margin-block-end: 7.5rem;
+        text-transform: uppercase;
     }
 
    .section__title::after{

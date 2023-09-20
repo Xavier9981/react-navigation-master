@@ -7,37 +7,37 @@ import Scholarship from "../assets/svg/scholarship.svg";
 import Employment from "../assets/svg/employment.svg";
 
 function Metrics() {
-  return (
-    <MetricsSection>
-        <div className="metrics">
-            <figure className="metrics__wave-top"><img src={Wave1} alt="wave1" /></figure>
-            <div className="metrics__wrapper">
-                <h2 className="section__title">Statistics</h2>
-                <p className="section__sub-title">It is possible, ever since the establishment of HELSB which replaced the Bursaries Committee below are a couple of metrics we’ve managed to achieve.</p>
-                <div className="inner__wrapper">
-                    <div className="metric">
-                        <figure className="metric__icon"><img src={StudentLoan} alt="Student Loan" /></figure>
-                        <div className="metric__stat"><h2>205K</h2></div>
-                        <div className="metric__description">Students Loans offered</div>
-                    </div>
+    return (
+        <MetricsSection>
+            <div className="metrics">
+                <figure className="metrics__wave-top"><img src={Wave1} alt="wave1" /></figure>
+                <div className="metrics__wrapper">
+                    <h2 className="section__title">Statistics</h2>
+                    <p className="section__sub-title">It is possible, ever since the establishment of HELSB which replaced the Bursaries Committee below are a couple of metrics we’ve managed to achieve.</p>
+                    <div className="inner__wrapper">
+                        <div className="metric">
+                            <figure className="metric__icon"><img src={StudentLoan} alt="Student Loan" /></figure>
+                            <div className="metric__stat"><h2>205K</h2></div>
+                            <div className="metric__description">Students Loans offered</div>
+                        </div>
 
-                    <div className="metric">
-                        <figure className="metric__icon"><img src={Scholarship} alt="Student Loan" /></figure>
-                        <div className="metric__stat"><h2>205K</h2></div>
-                        <div className="metric__description">Students Loans offered</div>
-                    </div>
+                        <div className="metric">
+                            <figure className="metric__icon"><img src={Scholarship} alt="Student Loan" /></figure>
+                            <div className="metric__stat"><h2>205K</h2></div>
+                            <div className="metric__description">Students Loans offered</div>
+                        </div>
 
-                    <div className="metric">
-                        <figure className="metric__icon"><img src={Employment} alt="Student Loan" /></figure>
-                        <div className="metric__stat"><h2>205K</h2></div>
-                        <div className="metric__description">Students Loans offered</div>
+                        <div className="metric">
+                            <figure className="metric__icon"><img src={Employment} alt="Student Loan" /></figure>
+                            <div className="metric__stat"><h2>205K</h2></div>
+                            <div className="metric__description">Students Loans offered</div>
+                        </div>
                     </div>
                 </div>
+                <figure className="metrics__wave-bottom"><img src={Wave2} alt="wave2" /></figure>
             </div>
-            <figure className="metrics__wave-bottom"><img src={Wave2} alt="wave2" /></figure>
-        </div>
-    </MetricsSection>
-  )
+        </MetricsSection>
+    )
 }
 
 const MetricsSection = styled.section`
@@ -58,6 +58,7 @@ const MetricsSection = styled.section`
             .section__title{
                 font-size: 36px;
                 text-align: center;
+                text-transform: uppercase;
             }
 
             .section__title::after{
