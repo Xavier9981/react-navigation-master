@@ -1,13 +1,12 @@
 import React from 'react';
-import {RiArrowRightFill} from "react-icons/ri";
 import { LuAsterisk } from "react-icons/lu";
+import { RiArrowRightFill } from "react-icons/ri";
 import styled from "styled-components";
 import placeholder from "../assets/icons/img_placeholder.png";
 
 function Blog() {
   return (
     <BlogSection>
-        
      <div className="section__title">
         <h2>What's new?</h2>
     </div>

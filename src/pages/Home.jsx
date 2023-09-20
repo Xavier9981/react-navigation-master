@@ -1,10 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import Hero from "../components/Hero";
-import Services from "../components/Services";
 import Blog from "../components/Blog";
-import Metrics from "../components/Metrics";
 import Footer from "../components/Footer";
+import Hero from "../components/Hero";
+import Metrics from "../components/Metrics";
+import Services from "../components/Services";
+import Testimonial from "../components/Testimonial";
 const Home = () => {
   return (
     <HomeWrap>
@@ -12,6 +13,7 @@ const Home = () => {
       <Services/>
       <Blog/>
       <Metrics/>
+      <Testimonial/>
       <Footer/>
     </HomeWrap>
   );

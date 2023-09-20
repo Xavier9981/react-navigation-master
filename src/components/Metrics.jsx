@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from "styled-components";
+import Employment from "../assets/svg/employment.svg";
+import Scholarship from "../assets/svg/scholarship.svg";
+import StudentLoan from "../assets/svg/student-loan.svg";
 import Wave1 from "../assets/svg/wave-1.svg";
 import Wave2 from "../assets/svg/wave-2.svg";
-import StudentLoan from "../assets/svg/student-loan.svg";
-import Scholarship from "../assets/svg/scholarship.svg";
-import Employment from "../assets/svg/employment.svg";
 
 function Metrics() {
   return (
