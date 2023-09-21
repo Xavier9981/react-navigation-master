@@ -30,6 +30,10 @@ const Testimonial = () => {
         text-underline-offset: 20px;
         margin-bottom: 20px;
     }
+    .divCarousel{
+    height: 50%;
+    width: 50%;
+    }
 
 
   `;
