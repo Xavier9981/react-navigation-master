@@ -23,7 +23,7 @@ const Home = () => {
   );
 };
 
-const HomeWrap = styled.div`
+const HomeWrap = styled.main`
   /*position: relative;*/
 `;
 

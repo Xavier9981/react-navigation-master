@@ -19,7 +19,7 @@ function Newsletter() {
   )
 }
 
-const NewsletterWrap = styled.div`
+const NewsletterWrap = styled.section`
   padding: 5rem 2.5rem;
   min-height: 20vh;
   display: flex;
@@ -27,56 +27,52 @@ const NewsletterWrap = styled.div`
 
   .newsletter{
     &__title,&__sub-title{
-        text-align: center;
-        width: 50%;
-        margin: 2.5rem auto;
+      text-align: center;
+      width: 50%;
+      margin: 2.5rem auto; 
     }
 
     &__title{
-        font-size: 36px;
-        font-weight: 900;
+      font-size: 36px;
+      /*font-weight: 900;*/
+      text-transform: uppercase;
     }
 
     &__sub-title{
-        font-size: 18px;
+      font-size: 18px;
     }
 
     
     &__form{
-        display: flex;
-        justify-content: center;
-        gap: 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
 
-        input[type=email],input[type=submit] {
-            border-radius: 2rem;
-        }
+      input[type=email],input[type=submit] {
+        border-radius: 2rem;
+      }
 
-        input[type=email]{
-            background-color: white;
-            /*background-image: url('searchicon.png');*/
-            background-position: 10px 10px;
-            background-repeat: no-repeat;
-            padding-left: 40px;
-            width: 50%;
-            border-color: #18416d;
-            border-style: solid;
-        }
+      input[type=email]{
+        background-color: white;
+        /*background-image: url('searchicon.png');*/
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding-left: 40px;
+        width: 50%;
+        border-color: #18416d;
+        border-style: solid;
+      }
 
-        input[type=submit] {
-            background-color: #18416d;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            cursor: pointer;
-            float: right;
-            font-weight: 600;
-        }
+      input[type=submit] {
+        background-color: #18416d;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        cursor: pointer;
+        float: right;
+        font-weight: 600;
+      }
     }
-
-    
-
-
-
   }
 
 `;

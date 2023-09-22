@@ -72,11 +72,11 @@ const HeroSection = styled.section`
           a{
             font-weight: 600;
             text-decoration: none;
-            border-radius: 15px;
+            border-radius: 2rem;
             border-width: 2px;
             border-style:solid;
             border-color: #18416d;
-            padding: 0.5rem 2rem;
+            padding: 0.75rem 2rem;
           }
         }
 

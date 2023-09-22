@@ -6,13 +6,14 @@ import {BsFacebook} from "react-icons/bs";
 import {BsTwitter} from "react-icons/bs";
 import {BsLinkedin} from "react-icons/bs";
 import {BiLogoInstagramAlt} from "react-icons/bi";
+import {FaRegCopyright} from "react-icons/fa";
 import logo from "../assets/icons/Logo.png"
 
 function Footer() {
   return (
     <FooterSection>
       <div className="footer-links">
-        <div>
+        <div className="wrap-logo">
           <a href="/">
             <figure>
               <img src={logo} alt="Logo" srcset="" />
@@ -49,7 +50,7 @@ function Footer() {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>Copyright HELSB-ICT @ 2023 | All rights reserved</p>
+        <p>Copyright <a href="/">HELSB</a> <span className="copyright-icon">&copy;</span> 2023 | All rights reserved</p>
         <p><a href="#">Privacy policy</a></p>
       </div>
     </FooterSection>
@@ -69,17 +70,20 @@ const FooterSection = styled.section`
     justify-content: center;
     gap: 15%;
 
-    div:nth-child(1) figure{
-      background-color: #fff;
-      border-top-right-radius: 4rem;
-      border-bottom-left-radius: 4rem;
+    .wrap-logo {
       display: flex;
-      padding: 0.5rem 2rem;
-
       a{
         margin: auto;
+
+        figure{
+          background-color: #fff;
+          border-top-right-radius: 4rem;
+          border-bottom-left-radius: 4rem;
+          padding: 0.5rem 2rem;
+        }
       }
     }
+    
 
     .wrap-footer-links {
       display: flex;
@@ -121,7 +125,9 @@ const FooterSection = styled.section`
   }
 
   .footer-bottom{
-    border-top: 1px solid #6c757d;
+    border-top-width: 1px;
+    border-top-color: #6c757d40;
+    border-top-style: solid;
     display: flex;
     justify-content: space-between;
     color: #fff;
@@ -130,6 +136,12 @@ const FooterSection = styled.section`
     padding-block-end: 1.5rem;
     p{
       font-size: 14px;
+
+      .copyright-icon{
+        svg{
+          font-size: inherit;
+        }
+      }
       a{
         color: #fff;
       }

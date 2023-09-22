@@ -101,11 +101,11 @@ const ServicesSection = styled.section`
         margin-block-start: 15px;
         a{
           font-weight: 600;
-          padding: 0.5rem 2rem;
+          padding: 0.75rem 2rem;
           border-color: #17AA97;
           text-decoration: none;
           color: #17AA97;
-          border-radius: 15px;
+          border-radius: 2rem;
           border-style: solid;
           border-width: 2px;
         }
