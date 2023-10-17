@@ -8,7 +8,23 @@ function Testimonials() {
         <h2 className="title">testimonial</h2>
 
         <div className="testimonials">
-          <div className="testimony"></div>
+          <div className="testimony">
+            <div className="testimony__box-1">
+              <h2 className="testimony__title">Testimony Title</h2>
+              <p className="testimony__poster">
+                <span>By:</span>
+                <span>HELSB</span>
+                <span>|</span>
+                <span>Media</span>
+              </p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam et, earum consectetur illo, nostrum sed ullam eveniet deserunt temporibus ipsa doloremque est alias. Mollitia magnam quidem reprehenderit eum, corrupti repudiandae?</p>
+
+              <div className="btn"><a href="#">Read More</a></div>
+
+              <div className="date">Mon, Mar 2, 2022</div>
+            </div>
+            <div className="testimony__box-2"><figure><img src="" alt="" /></figure></div>
+          </div>
         </div>
       </div>
     </TestimonialsWrap>

@@ -112,5 +112,12 @@ const ServicesSection = styled.section`
       }
     }
   }
+
+  @media screen and (min-width: 280px) and (max-width: 768px) { 
+  .services{
+    flex-direction: column;
+    gap: 15rem;
+  }
+}
 `;
 export default Services;

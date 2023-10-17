@@ -18,26 +18,26 @@ function Metrics() {
                 </div>
                 <div className="metrics__wrapper">
                     <div className="inner__wrapper-content">
-                    <h2 className="section__title">Statistics</h2>
-                    <p className="section__sub-title">It is possible, ever since the establishment of HELSB which replaced the Bursaries Committee below are a couple of metrics we’ve managed to achieve.</p>
-                    <div className="inner__wrapper">
-                        <div className="metric">
-                            <figure className="metric__icon"><img src={StudentLoan} alt="Student Loan" /></figure>
-                            <div className="metric__stat"><h2>205K</h2></div>
-                            <div className="metric__description"><p>Students Loans offered</p></div>
-                        </div>
+                        <h2 className="section__title">Statistics</h2>
+                        <p className="section__sub-title">It is possible, ever since the establishment of HELSB which replaced the Bursaries Committee below are a couple of metrics we’ve managed to achieve.</p>
+                        <div className="inner__wrapper">
+                            <div className="metric">
+                                <figure className="metric__icon"><img src={StudentLoan} alt="Student Loan" /></figure>
+                                <div className="metric__stat"><h2>205K</h2></div>
+                                <div className="metric__description"><p>Students Loans offered</p></div>
+                            </div>
 
-                        <div className="metric">
-                            <figure className="metric__icon"><img src={Scholarship} alt="Student Loan" /></figure>
-                            <div className="metric__stat"><h2>10K</h2></div>
-                            <div className="metric__description"><p>Scholarships offered</p></div>
-                        </div>
+                            <div className="metric">
+                                <figure className="metric__icon"><img src={Scholarship} alt="Student Loan" /></figure>
+                                <div className="metric__stat"><h2>10K</h2></div>
+                                <div className="metric__description"><p>Scholarships offered</p></div>
+                            </div>
 
-                        <div className="metric">
-                            <figure className="metric__icon"><img src={Employment} alt="Student Loan" /></figure>
-                            <div className="metric__stat"><h2>100K</h2></div>
-                            <div className="metric__description"><p>Previous Beneficiaries Currently under Employment</p></div>
-                        </div>
+                            <div className="metric">
+                                <figure className="metric__icon"><img src={Employment} alt="Student Loan" /></figure>
+                                <div className="metric__stat"><h2>100K</h2></div>
+                                <div className="metric__description"><p>Previous Beneficiaries Currently under Employment</p></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -55,7 +55,7 @@ const MetricsSection = styled.section`
     background-color: #18416d;
     color: #ffffff;
 
-    .metrics{
+    /*.metrics{
         position: relative;
 
         .custom-shape-divider-top-1695375677 {
@@ -127,7 +127,7 @@ const MetricsSection = styled.section`
                 border-top-width: 0.065em;
                 border-top-color: #ffffff;
                 opacity: 0.75;
-                /*height: -1.95em;*/
+                //height: -1.95em;
             }
 
             .section__sub-title{
@@ -178,21 +178,23 @@ const MetricsSection = styled.section`
                 }
             }
         }
-    }
-    
+    }*/
+
     @media  screen and (min-width: 280px) and (max-width: 768px) { 
         .metrics{
             display: none;
             &__wrapper{
-                .section__sub-title{
-                    font-size: 18px;
-                    text-align: center;
-                    width: 100%;
-                    margin: 4rem auto 0;
-                }
-                .inner__wrapper{
-                    flex-direction: column;
-                    gap: 15rem;
+                .inner__wrapper-content{
+                    .section__sub-title{
+                        font-size: 18px;
+                        text-align: center;
+                        width: 100%;
+                        margin: 4rem auto 0;
+                    }
+                    .inner__wrapper{
+                        flex-direction: column;
+                        gap: 15rem;
+                    }
                 }
             }
         }

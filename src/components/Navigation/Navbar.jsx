@@ -11,7 +11,11 @@ const Navbar = ({ toggleDrawer, routes }) => {
         <DrawerButton onClick={toggleDrawer}>
           <FaBars />
         </DrawerButton>
-        <SNavbarBrand><img src={logo} alt="Logo" srcset="" /></SNavbarBrand>
+        <SNavbarBrand>
+          <a href="/">
+            <img src={logo} alt="Logo" srcset="" />
+          </a>
+        </SNavbarBrand>
         <RightNav>
           <NavRoutes>
             {routes.map((route) => {
@@ -60,9 +64,11 @@ const NavContainer = styled.div`
 const SNavbarBrand = styled.h2`
   font-size: 3rem;
   width: 150px;
-  img {
-    display: block;
-    width: 100%;
+  a{
+      img {
+      display: block;
+      width: 100%;
+    }
   }
 `;
 const RightNav = styled.div`

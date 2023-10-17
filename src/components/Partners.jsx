@@ -157,6 +157,95 @@ const PartnersWrap = styled.section`
 
     
   }
+
+  @media  screen and (min-width: 280px) and (max-width: 768px) { 
+    .partners{
+      position: relative;
+      /*top wave opacity separator*/
+      .custom-shape-divider-top-1695375677 {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+      }
+
+      .custom-shape-divider-top-1695375677 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 85px;
+      }
+
+      .custom-shape-divider-top-1695375677 .shape-fill {
+        fill: #ffffff;
+      }
+
+      /*bottom wave separator*/
+      .custom-shape-divider-bottom-1695377409 {
+        /*position: absolute;*/
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+      }
+
+      .custom-shape-divider-bottom-1695377409 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 85px;
+        transform: rotateY(180deg);
+      }
+
+      .custom-shape-divider-bottom-1695377409 .shape-fill {
+        fill: #ffffff;
+      }
+
+      .partners__wrap-content{
+        min-height: 70vh;
+
+        .partners__title::after{
+          content: "";
+          display: block;
+          width: 7em;
+          margin: 0.25em auto 0.65em;
+          border-top-width: 0.065em;
+          border-top-style: dashed;
+          border-top-color: #18416d;
+          opacity: 0.75;
+          /*height: -1.95em;*/
+        }
+
+        .partners__wrap{
+          flex-direction: column;
+          gap: 5%;
+
+          .partner{
+            margin-inline-end: auto;
+            margin-inline-start: auto;
+            margin-block-start: 5rem;
+
+            a{
+              figure{
+                width: 125px;
+                height: 100%;
+
+                img{
+                  display: block;
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 `;
 
 export default Partners

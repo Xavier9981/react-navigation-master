@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <HomeWrap>
       <Hero/>
-      <Services/>cl
+      <Services/>
       <Blog/>
       <Metrics/>
       <Testimonials/>

@@ -112,6 +112,78 @@ const HeroSection = styled.section`
       } 
     }
   }
+
+  @media screen and (min-width: 280px) and (max-width: 1080px) { 
+    .heroWrap{
+      flex-direction: column-reverse;
+    }
+
+    .heroIntro{
+      width: 100%;
+      margin: auto;
+
+      .introText{
+        h2{
+          font-size: 36px;
+          /*font-weight: 900;*/
+          color: #C11E2F;
+
+          span{ 
+            color: #17AA97;
+          }
+          
+
+        }
+
+        p{
+          font-size: 18px;
+          line-height: 1.25;
+          margin-block-start: 15px;
+        }
+      }
+
+      .introBtns{
+        display: flex;
+        gap: 2rem;
+        margin-block-start: 30px;
+
+        div{
+          a{
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 2rem;
+            border-width: 2px;
+            border-style:solid;
+            border-color: #18416d;
+            padding: 0.75rem 2rem;
+          }
+        }
+
+        div:nth-child(1){
+          a{
+            color: rgb(255,255,255);
+            background-color: #18416d;
+          }
+        }
+
+        div:nth-child(2){
+          a{
+            color: #18416d;
+          }
+        }
+      }
+    }
+
+    .heroImg{
+      width: 60%;
+      display: flex;
+      
+      figure{
+        width: 200px;
+        height: 150px;
+      } 
+    }
+  }
 `;
 
 export default Hero
