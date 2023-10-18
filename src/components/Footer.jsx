@@ -200,6 +200,69 @@ const FooterSection = styled.section`
       }
     }
   }
+
+  @media screen and (max-width: 768px) {
+    .footer-links {
+      flex-direction: column;
+
+      .wrap-logo {
+        display: flex;
+        a {
+          margin: auto;
+
+          figure {
+            width: 250px;
+            border-top-right-radius: 2rem;
+            border-bottom-left-radius: 2rem;
+
+            img {
+              display: block;
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+            }
+          }
+        }
+      }
+      .wrap-footer-links {
+        margin-block-start: 5rem;
+        justify-content: center;
+      }
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    padding-inline-start: 2rem;
+    padding-inline-end: 2rem;
+
+    .footer-links {
+      flex-direction: column;
+
+      .wrap-footer-links {
+        flex-direction: column;
+        gap: 4rem;
+      }
+    }
+
+    .footer-bottom {
+      flex-direction: column-reverse;
+      gap: 1.5rem;
+
+      p {
+        margin: auto;
+        text-align: center;
+
+        .copyright-icon {
+          svg {
+            font-size: inherit;
+          }
+        }
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
 `;
 
 export default Footer;

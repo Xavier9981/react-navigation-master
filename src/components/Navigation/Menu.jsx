@@ -64,7 +64,7 @@ const MenuButton = styled.div`
   padding: 0 0.5rem;
 
   svg {
-    font-size: 1.75rem;
+    /*font-size: 1.75rem;*/
     margin-inline-start: 0.35rem;
   }
 

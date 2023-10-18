@@ -154,7 +154,7 @@ const TestimonialsWrap = styled.section`
               display: block;
               object-fit: contain;
               width: 100%;
-              height: 36rem;
+              height: 100%;
             }
           }
         }
@@ -170,6 +170,40 @@ const TestimonialsWrap = styled.section`
         position: absolute;
         top: 0;
         bottom: 0;
+      }
+    }
+
+    @media screen and (max-width: 425px) {
+      .testimonials {
+        .testimony {
+          flex-direction: column-reverse;
+          gap: 3rem;
+
+          &__box-1 {
+            width: 100%;
+            margin: auto;
+            padding: 2rem 1.5rem;
+
+            .testimony__title {
+              font-size: 24px;
+              font-weight: 900;
+            }
+
+            p {
+              font-size: 18px;
+            }
+
+            .testimony__poster {
+              font-size: 16px;
+            }
+          }
+
+          &__box-2 {
+            width: 100%;
+            margin: auto;
+            padding: 2rem 1.5rem;
+          }
+        }
       }
     }
   }

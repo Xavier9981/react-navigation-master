@@ -1,3 +1,5 @@
+/** @format */
+
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
@@ -25,8 +27,6 @@ const Drawer = ({ isOpen, toggleDrawer, routes }) => {
               );
             })}
           </NavRoutes>
-
-    
         </RightNav>
       </SDrawer>
     </>
@@ -36,7 +36,8 @@ const Drawer = ({ isOpen, toggleDrawer, routes }) => {
 //<LoginButton>Login</LoginButton>
 export default Drawer;
 const SNavbarBrand = styled.h2`
-  font-size: 3rem;
+  /*font-size: 3rem;*/
+  font-weight: 100;
 `;
 
 const Backdrop = styled.div`
@@ -75,7 +76,7 @@ const NavRoute = styled(Link)`
   display: flex;
   text-decoration: none;
   color: black;
-  font-size: 2.5rem;
+  /*font-size: 2.5rem;*/
   padding: 0.5rem;
 `;
 

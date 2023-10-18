@@ -1,7 +1,9 @@
-import React from 'react'
+/** @format */
+
+import React from "react";
 /*import { BsDot } from "react-icons/bs";<BsDot />*/
 import styled from "styled-components";
-import carolImg from "../assets/Carol-img.jpg"
+import carolImg from "../assets/Carol-img.jpg";
 
 function Hero() {
   return (
@@ -9,23 +11,38 @@ function Hero() {
       <div className="heroWrap">
         <div className="heroIntro">
           <div className="introText">
-            <h2>It is possible <span>	&#46;</span></h2>
-            <p>We’re a Non-discriminatory, Dynamic, Visible and Accessible provider of Student Loans and Scholarships for higher education to eligible Zambians.</p>
-            <p>With HELSB any eligible Zambian can get a Student Loan or Scholarship, check if you’re a beneficiary.</p>
+            <h2>
+              It is possible <span> &#46;</span>
+            </h2>
+            <p>
+              We’re a Non-discriminatory, Dynamic, Visible and Accessible
+              provider of Student Loans and Scholarships for higher education to
+              eligible Zambians.
+            </p>
+            <p>
+              With HELSB any eligible Zambian can get a Student Loan or
+              Scholarship, check if you’re a beneficiary.
+            </p>
           </div>
 
           <div className="introBtns">
-            <div><a href="/student-loans">Student Loans</a></div>
-            <div><a href="/student-scholarships">Scholarships</a></div>
+            <div>
+              <a href="/student-loans">Student Loans</a>
+            </div>
+            <div>
+              <a href="/student-scholarships">Scholarships</a>
+            </div>
           </div>
         </div>
 
         <div className="heroImg">
-          <figure><img src={carolImg} alt="alt" srcset="" /></figure>
+          <figure>
+            <img src={carolImg} alt="alt" srcset="" />
+          </figure>
         </div>
       </div>
     </HeroSection>
-  )
+  );
 }
 
 const HeroSection = styled.section`
@@ -34,156 +51,139 @@ const HeroSection = styled.section`
   display: flex;
   justify-content: center;
 
-  .heroWrap{
-    display:flex; 
+  .heroWrap {
+    display: flex;
     gap: 8%;
     /*flex-wrap: wrap;*/
 
-    .heroIntro{
+    .heroIntro {
       width: 400px;
       margin: auto;
 
-      .introText{
-        h2{
+      .introText {
+        h2 {
           font-size: 36px;
           /*font-weight: 900;*/
-          color: #C11E2F;
+          color: #c11e2f;
 
-          span{ 
-            color: #17AA97;
+          span {
+            color: #17aa97;
           }
-          
-
         }
 
-        p{
+        p {
           font-size: 18px;
           line-height: 1.25;
           margin-block-start: 15px;
         }
       }
 
-      .introBtns{
+      .introBtns {
         display: flex;
         gap: 2rem;
         margin-block-start: 30px;
 
-        div{
-          a{
+        div {
+          a {
             font-weight: 600;
             text-decoration: none;
             border-radius: 2rem;
             border-width: 2px;
-            border-style:solid;
+            border-style: solid;
             border-color: #18416d;
             padding: 0.75rem 2rem;
           }
         }
 
-        div:nth-child(1){
-          a{
-            color: rgb(255,255,255);
+        div:nth-child(1) {
+          a {
+            color: rgb(255, 255, 255);
             background-color: #18416d;
           }
         }
 
-        div:nth-child(2){
-          a{
+        div:nth-child(2) {
+          a {
             color: #18416d;
           }
         }
       }
     }
 
-    .heroImg{
+    .heroImg {
       width: 60%;
       display: flex;
-        figure{
-          width: 550px;
-          height: 350px;
-          margin: auto;
+      figure {
+        width: 550px;
+        height: 350px;
+        margin: auto;
 
-        img{
+        img {
           display: block;
           width: 100%;
           height: 100%;
           object-fit: contain;
         }
-      } 
+      }
     }
   }
 
-  @media screen and (min-width: 280px) and (max-width: 1080px) { 
-    .heroWrap{
+  @media screen and (max-width: 425px) {
+    .heroWrap {
       flex-direction: column-reverse;
-    }
+      /*flex-wrap: wrap;*/
 
-    .heroIntro{
-      width: 100%;
-      margin: auto;
+      .heroIntro {
+        width: 100%;
+        margin: auto;
 
-      .introText{
-        h2{
-          font-size: 36px;
-          /*font-weight: 900;*/
-          color: #C11E2F;
+        .introText {
+          h2 {
+            font-size: 36px;
+            /*font-weight: 900;*/
+            color: #c11e2f;
 
-          span{ 
-            color: #17AA97;
+            span {
+              color: #17aa97;
+            }
           }
-          
 
+          p {
+            font-size: 18px;
+            line-height: 1.25;
+            margin-block-start: 15px;
+          }
         }
 
-        p{
-          font-size: 18px;
-          line-height: 1.25;
-          margin-block-start: 15px;
+        .introBtns {
+          gap: 1.5rem;
+
+          div {
+            a {
+              padding: 0.75rem 1.5rem;
+            }
+          }
         }
       }
 
-      .introBtns{
+      .heroImg {
+        width: 100%;
         display: flex;
-        gap: 2rem;
-        margin-block-start: 30px;
+        figure {
+          width: 100%;
+          height: 100%;
+          margin: auto;
 
-        div{
-          a{
-            font-weight: 600;
-            text-decoration: none;
-            border-radius: 2rem;
-            border-width: 2px;
-            border-style:solid;
-            border-color: #18416d;
-            padding: 0.75rem 2rem;
-          }
-        }
-
-        div:nth-child(1){
-          a{
-            color: rgb(255,255,255);
-            background-color: #18416d;
-          }
-        }
-
-        div:nth-child(2){
-          a{
-            color: #18416d;
+          img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
           }
         }
       }
-    }
-
-    .heroImg{
-      width: 60%;
-      display: flex;
-      
-      figure{
-        width: 200px;
-        height: 150px;
-      } 
     }
   }
 `;
 
-export default Hero
+export default Hero;

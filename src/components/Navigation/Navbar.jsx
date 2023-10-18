@@ -1,9 +1,11 @@
+/** @format */
+
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import Menu from "./Menu";
-import logo from "../../assets/icons/Logo.png"
+import logo from "../../assets/icons/Logo.png";
 const Navbar = ({ toggleDrawer, routes }) => {
   return (
     <SNavbar>
@@ -29,7 +31,6 @@ const Navbar = ({ toggleDrawer, routes }) => {
               );
             })}
           </NavRoutes>
-          
         </RightNav>
       </NavContainer>
     </SNavbar>
@@ -41,7 +42,7 @@ export default Navbar;
 
 const DrawerButton = styled.button`
   all: unset;
-  font-size: 3rem;
+  /*font-size: 3rem;*/
   display: grid;
   @media (min-width: 768px) {
     display: none;
@@ -62,10 +63,10 @@ const NavContainer = styled.div`
   color: #18416d;
 `;
 const SNavbarBrand = styled.h2`
-  font-size: 3rem;
+  /*font-size: 3rem;*/
   width: 150px;
-  a{
-      img {
+  a {
+    img {
       display: block;
       width: 100%;
     }
@@ -81,7 +82,7 @@ const NavRoutes = styled.div`
   }
   display: flex;
   gap: 1rem;
-  font-size: 2rem;
+  /*font-size: 2rem;*/
   align-items: center;
 `;
 const NavRoute = styled(Link)`
