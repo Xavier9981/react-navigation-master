@@ -28,15 +28,15 @@ const ExpandMenu = ({ route }) => {
 
 export default ExpandMenu;
 const SubRoutesContainer = styled.div`
-  display: ${(props) => (props.isOpen ? "flex" : "none")};
+  display: ${(props) => (props.isOpen ? "none" : "flex")};
   flex-direction: column;
   padding: 1rem;
   z-index: 10;
 `;
 
-/*const SMenu = styled.div`
-  display: none;
-`;*/
+const SMenu = styled.div`
+  /*display: none;*/
+`;
 
 const MenuButton = styled.div`
   font-size: 2.5rem;

@@ -39,7 +39,8 @@ const SubRoutesContainer = styled.div`
   transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
   word-break: keep-all;
 
-  ::after ${SubRoutesContainer} {
+  /**/
+  ::after {
     position: relative;
     content: "";
     height: 2rem;
