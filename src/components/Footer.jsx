@@ -1,13 +1,14 @@
-import React from 'react'
+/** @format */
+
+import React from "react";
 import styled from "styled-components";
 
-
-import {BsFacebook} from "react-icons/bs";
-import {BsTwitter} from "react-icons/bs";
-import {BsLinkedin} from "react-icons/bs";
-import {BiLogoInstagramAlt} from "react-icons/bi";
-import {FaRegCopyright} from "react-icons/fa";
-import logo from "../assets/icons/Logo.png"
+import { BsFacebook } from "react-icons/bs";
+import { BsTwitter } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
+import { BiLogoInstagramAlt } from "react-icons/bi";
+import { FaRegCopyright } from "react-icons/fa";
+import logo from "../assets/icons/Logo.png";
 
 function Footer() {
   return (
@@ -24,37 +25,78 @@ function Footer() {
           <div>
             <h2>Institution Info</h2>
             <ul>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Terms and conditions</a></li>
-              <li><a href="#">Customer service</a></li>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+              <li>
+                <a href="#">Terms and conditions</a>
+              </li>
+              <li>
+                <a href="#">Customer service</a>
+              </li>
             </ul>
           </div>
           <div>
             <h2>Top Links</h2>
             <ul>
-              <li><a href="#">Student Loans</a></li>
-              <li><a href="#">Repay Student Loan</a></li>
-              <li><a href="#">Scholarships</a></li>
+              <li>
+                <a href="#">Student Loans</a>
+              </li>
+              <li>
+                <a href="#">Repay Student Loan</a>
+              </li>
+              <li>
+                <a href="#">Scholarships</a>
+              </li>
+              <li>
+                <a href="https://student.helsb.gov.zm" target="_blank">
+                  Student Web
+                </a>
+              </li>
             </ul>
           </div>
           <div>
             <h2>Social Links</h2>
             <ul>
-              <li><a href="#"><BsFacebook/></a></li>
-              <li><a href="#"><BsTwitter/></a></li>
-              <li><a href="#"><BsLinkedin/></a></li>
-              <li><a href="#"><BiLogoInstagramAlt/></a></li>
+              <li>
+                <a href="#">
+                  <BsFacebook />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <BsTwitter />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <BsLinkedin />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <BiLogoInstagramAlt />
+                </a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
       <div className="footer-bottom">
-        <p>Copyright <a href="/">HELSB</a> <span className="copyright-icon">&copy;</span> 2023 | All rights reserved</p>
-        <p><a href="#">Privacy policy</a></p>
+        <p>
+          Copyright <a href="/">HELSB</a>{" "}
+          <span className="copyright-icon">&copy;</span> 2023 | All rights
+          reserved
+        </p>
+        <p>
+          <a href="#">Privacy policy</a>
+        </p>
       </div>
     </FooterSection>
-  )
+  );
 }
 
 const FooterSection = styled.section`
@@ -63,19 +105,18 @@ const FooterSection = styled.section`
   padding-inline-end: 5rem;
   padding-block-start: 4rem;
 
-
-  .footer-links{
+  .footer-links {
     display: flex;
     color: #fff;
     justify-content: center;
-    gap: 15%;
+    gap: 20%;
 
     .wrap-logo {
       display: flex;
-      a{
+      a {
         margin: auto;
 
-        figure{
+        figure {
           background-color: #fff;
           border-top-right-radius: 4rem;
           border-bottom-left-radius: 4rem;
@@ -83,20 +124,33 @@ const FooterSection = styled.section`
         }
       }
     }
-    
 
     .wrap-footer-links {
       display: flex;
-      gap: 5rem;
+      gap: 7.5rem;
 
-      div{
-        h2{
-          margin-inline-start: -20px;
+      div {
+        h2 {
+          /*margin-inline-start: -20px;*/
         }
-        ul{
-          li{
-            margin-block-start: 10px;
-            a{
+
+        h2::after {
+          content: "";
+          display: block;
+          width: 3.5em;
+          margin: 0.15em 0 0.75em;
+          border-top-width: 0.1em;
+          border-top-style: solid;
+          border-top-color: #ff9800;
+          opacity: 0.75;
+        }
+
+        ul {
+          list-style-type: none;
+          /*padding-inline-start: 40px;*/
+          li {
+            margin-block-start: 15px;
+            a {
               color: #fff;
               text-decoration: none;
             }
@@ -104,17 +158,16 @@ const FooterSection = styled.section`
         }
       }
 
-      div:nth-child(3){
-        ul{
+      div:nth-child(3) {
+        ul {
           display: flex;
           gap: 3rem;
-          list-style-type: none;
-          li{
 
-            a{
+          li {
+            a {
               color: #fff;
               text-decoration: none;
-              svg{
+              svg {
                 font-size: 24px;
               }
             }
@@ -124,7 +177,7 @@ const FooterSection = styled.section`
     }
   }
 
-  .footer-bottom{
+  .footer-bottom {
     border-top-width: 1px;
     border-top-color: #6c757d40;
     border-top-style: solid;
@@ -134,21 +187,19 @@ const FooterSection = styled.section`
     margin-block-start: 3.5rem;
     padding-block-start: 1.5rem;
     padding-block-end: 1.5rem;
-    p{
+    p {
       font-size: 14px;
 
-      .copyright-icon{
-        svg{
+      .copyright-icon {
+        svg {
           font-size: inherit;
         }
       }
-      a{
+      a {
         color: #fff;
       }
     }
   }
-  
-
 `;
 
-export default Footer
+export default Footer;

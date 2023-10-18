@@ -1,3 +1,5 @@
+/** @format */
+
 import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
@@ -32,7 +34,9 @@ const SubRoutesContainer = styled.div`
   z-index: 10;
 `;
 
-const SMenu = styled.div``;
+/*const SMenu = styled.div`
+  display: none;
+`;*/
 
 const MenuButton = styled.div`
   font-size: 2.5rem;
