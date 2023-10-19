@@ -20,7 +20,8 @@ function Newsletter() {
 }
 
 const NewsletterWrap = styled.section`
-  padding: 5rem 2.5rem;
+  padding-inline: 2.5rem;
+  padding-block: 5rem;
   min-height: 20vh;
   display: flex;
   justify-content: center;
@@ -73,6 +74,59 @@ const NewsletterWrap = styled.section`
         font-weight: 600;
       }
     }
+  }
+
+  @media screen and (max-width: 425px) {
+    padding-inline-start: 2rem;
+    padding-inline-end: 2rem;
+
+    .newsletter{
+        &__title,&__sub-title{
+          width: 100%;
+          margin: 2.5rem auto; 
+        }
+
+        &__title{
+          font-size: 36px;
+        }
+
+        &__sub-title{
+          font-size: 18px;
+        }
+
+        
+        &__form{
+          flex-direction: column;
+          gap: 0.5rem;
+
+          input[type=email],input[type=submit] {
+            border-radius: 2rem;
+          }
+
+          input[type=email]{
+            background-color: white;
+            /*background-image: url('searchicon.png');*/
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding-left: 40px;
+            height: 39px;
+            width: 100%;
+            border-color: #18416d;
+            border-style: solid;
+          }
+
+          input[type=submit] {
+            background-color: #18416d;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+            float: right;
+            font-weight: 600;
+          }
+        }
+      }
+      
   }
 
 `;

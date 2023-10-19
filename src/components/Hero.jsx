@@ -57,7 +57,7 @@ const HeroSection = styled.section`
     /*flex-wrap: wrap;*/
 
     .heroIntro {
-      width: 400px;
+      width: 465px;
       margin: auto;
 
       .introText {

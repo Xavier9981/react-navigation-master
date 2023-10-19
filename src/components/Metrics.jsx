@@ -38,7 +38,7 @@ function Metrics() {
           <div className="inner__wrapper-content">
             <h2 className="section__title">Statistics</h2>
             <p className="section__sub-title">
-              It is possible, ever since the establishment of HELSB which
+              It is possible. Ever since the establishment of HELSB which
               replaced the Bursaries Committee below are a couple of metrics
               we’ve managed to achieve.
             </p>
@@ -104,9 +104,10 @@ const MetricsSection = styled.section`
   background-color: #18416d;
   color: #ffffff;
 
+
   .metrics {
     position: relative;
-
+    
     /*top wave opacity separator*/
     .custom-shape-divider-top-1695375677 {
       position: relative;
@@ -155,7 +156,9 @@ const MetricsSection = styled.section`
       /*margin-top: 155px;*/
 
       .inner__wrapper-content {
-        height: 100%;
+        height: 100%;  
+        padding-inline: 0.5rem; 
+        padding-block: 2rem 0;
 
         .section__title {
           font-size: 36px;
@@ -166,7 +169,7 @@ const MetricsSection = styled.section`
         .section__title::after {
           content: "";
           display: block;
-          width: 5.2em;
+          width: 3.5em;
           margin: 0.25em auto 0.65em;
           border-top-style: dashed;
           border-top-width: 0.065em;
@@ -225,24 +228,13 @@ const MetricsSection = styled.section`
                 border-top-width: 0.065em;
                 border-top-color: #ffffff;
                 opacity: 0.75;
-                /*height: -1.95em;*/
               }
-              /*h2::before{
-                                content: "";
-                                display: block;
-                                width: 0.75rem;
-                                margin: 0.25em auto 0.65em;
-                                border-top-style: dashed;
-                                border-top-width: 0.065em;
-                                border-top-color: #ffffff;
-                                opacity: 0.75;
-                                height: -1.95em;
-                            }*/
+
             }
 
             &__description {
               p {
-                line-height: 1.25;
+                line-height: 1.5;
               }
             }
           }
@@ -251,30 +243,20 @@ const MetricsSection = styled.section`
     }
   }
 
-  @media screen and (min-width: 280px) and (max-width: 768px) {
+  @media screen and (max-width: 425px) {
     .metrics {
+
+
       /*bottom wave separator*/
-      .custom-shape-divider-bottom-1695377409 {
-        position: relative; /**/
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        overflow: hidden;
-        line-height: 0;
-        transform: rotate(180deg);
+      .custom-shape-divider-top-1695375677 svg {
+        height: 85px;
       }
 
+      /*bottom wave separator*/
       .custom-shape-divider-bottom-1695377409 svg {
-        position: relative;
-        display: block;
-        width: calc(100% + 1.3px);
-        height: 104px;
-        transform: rotateY(180deg);
+        height: 65px;
       }
 
-      .custom-shape-divider-bottom-1695377409 .shape-fill {
-        fill: #ffffff;
-      }
       /*display: none;*/
       &__wrapper {
         .inner__wrapper-content {
@@ -292,10 +274,10 @@ const MetricsSection = styled.section`
 
             .metric {
               margin: auto;
-              width: 18rem;
+              width: 9.5rem;
               display: flex;
               flex-direction: column;
-              gap: 1.5rem;
+              /*gap: 1.5rem;*/
 
               &__icon {
                 display: flex;
@@ -313,37 +295,17 @@ const MetricsSection = styled.section`
 
               &__stat {
                 h2 {
-                  font-weight: 900;
-                  font-size: 36px;
+                  margin-block-start: 0.25em;
                 }
 
                 h2::after {
-                  content: "";
-                  display: block;
-                  width: 0.75rem;
-                  margin: 0.25em auto 0.65em;
-                  border-top-style: dashed;
-                  border-top-width: 0.065em;
-                  border-top-color: #ffffff;
-                  opacity: 0.75;
-                  /*height: -1.95em;*/
+                  margin: 0.25em auto 0.25em;
                 }
-                /*h2::before{
-                                content: "";
-                                display: block;
-                                width: 0.75rem;
-                                margin: 0.25em auto 0.65em;
-                                border-top-style: dashed;
-                                border-top-width: 0.065em;
-                                border-top-color: #ffffff;
-                                opacity: 0.75;
-                                height: -1.95em;
-                            }*/
               }
 
               &__description {
                 p {
-                  line-height: 1.25;
+                  line-height: 1.5;
                 }
               }
             }

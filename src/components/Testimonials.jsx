@@ -21,13 +21,14 @@ function Testimonials() {
                 <span> | </span>
                 <span>Media</span>
               </p>
-              <p className="description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-                et, earum consectetur illo, nostrum sed ullam eveniet deserunt
-                temporibus ipsa doloremque est alias. Mollitia magnam quidem
-                reprehenderit eum, corrupti repudiandae?
-              </p>
-
+              <div className="description">
+                <p >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+                  et, earum consectetur illo, nostrum sed ullam eveniet deserunt
+                  temporibus ipsa doloremque est alias. Mollitia magnam quidem
+                  reprehenderit eum, corrupti repudiandae?
+                </p>
+              </div>
               <div className="date">Mon, Mar 2, 2022</div>
 
               <div className="btn">
@@ -68,7 +69,7 @@ const TestimonialsWrap = styled.section`
     .title::after {
       content: "";
       display: block;
-      width: 6.5em;
+      width: 3.5em;
       margin: 0.25em auto 0.65em;
       border-top-style: dashed;
       border-top-width: 0.065em;
@@ -116,9 +117,12 @@ const TestimonialsWrap = styled.section`
           }
 
           .description {
-            line-height: 1.5;
             margin-block-start: 15px;
             margin-block-end: 15px;
+
+            p{
+              line-height: 1.5;
+            }
           }
 
           .btn {
@@ -145,11 +149,12 @@ const TestimonialsWrap = styled.section`
         }
 
         &__box-2 {
-          width: 30rem;
           margin: auto 0;
-          padding: 2rem 1.5rem 1.5rem 0;
+          padding-inline: 1.5rem;
+          padding-block: 2rem 0;
 
           figure {
+            width: 15rem;
             img {
               display: block;
               object-fit: contain;
@@ -177,12 +182,13 @@ const TestimonialsWrap = styled.section`
       .testimonials {
         .testimony {
           flex-direction: column-reverse;
-          gap: 3rem;
+          gap: 0;
 
           &__box-1 {
             width: 100%;
             margin: auto;
-            padding: 2rem 1.5rem;
+            padding-block: 2rem;
+            padding-inline: 1.5rem;
 
             .testimony__title {
               font-size: 24px;
@@ -196,12 +202,28 @@ const TestimonialsWrap = styled.section`
             .testimony__poster {
               font-size: 16px;
             }
+
+            .description {
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: 3;
+              -moz-box-orient: vertical;
+              -moz-line-clamp: 3;
+              box-orient: vertical;
+              line-clamp: 3;
+              overflow: hidden;
+            }
           }
 
           &__box-2 {
             width: 100%;
-            margin: auto;
-            padding: 2rem 1.5rem;
+            padding-block: 2rem 0;
+            padding-inline: 1.5rem;
+
+            figure {
+              width: 100%;
+              margin: auto;
+            }
           }
         }
       }
