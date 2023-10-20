@@ -4,13 +4,18 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import ExpandMenu from "./ExpandMenu";
+import { IoClose } from "react-icons/io5";
+
 const Drawer = ({ isOpen, toggleDrawer, routes }) => {
   return (
     <>
       {isOpen && <Backdrop onClick={toggleDrawer} />}
       <SDrawer isOpen={isOpen}>
         <RightNav>
-          <SNavbarBrand>LOGO</SNavbarBrand>
+          <SNavbarBrand>
+            <a href="#">LOGO</a>
+            <IoClose onClick={toggleDrawer} />
+          </SNavbarBrand>
           <NavRoutes>
             {routes.map((route) => {
               if (route.subRoutes) {
@@ -33,10 +38,10 @@ const Drawer = ({ isOpen, toggleDrawer, routes }) => {
   );
 };
 
-//<LoginButton>Login</LoginButton>
 export default Drawer;
 const SNavbarBrand = styled.h2`
-  /*font-size: 3rem;*/
+  display: flex;
+  justify-content: space-between;
   font-weight: 100;
 `;
 
@@ -48,7 +53,6 @@ const Backdrop = styled.div`
   top: 0;
   left: 0;
   transition: 0.3s ease;
-
   background-color: rgba(0, 0, 0, 0.2);
 `;
 
@@ -60,8 +64,12 @@ const SDrawer = styled.div`
   width: inherit;
   background-color: white;
   transition: 0.3s ease;
-
   transform: translateX(${(props) => (props.isOpen ? "0" : "-100%")});
+
+  @media (max-width: 425px) {
+    position: fixed;
+    width: 100%;
+  }
 `;
 
 const RightNav = styled.div`
@@ -71,26 +79,16 @@ const RightNav = styled.div`
   padding: 1rem;
 `;
 
-const NavRoutes = styled.div``;
+const NavRoutes = styled.div`
+  overflow-y: scroll;
+  height: 90vh;
+`;
+
 const NavRoute = styled(Link)`
   display: flex;
   text-decoration: none;
-  color: black;
+  color: rgb(24, 65, 109);
   /*font-size: 2.5rem;*/
   padding: 0.5rem;
+  font-weight: 600;
 `;
-
-/*const LoginButton = styled.button`
-  padding: 0.7rem 3rem;
-  background-color: white;
-  border: 1px solid black;
-  border-radius: 3rem;
-  transition: 0.3s ease;
-  align-self: flex-start;
-  &:hover {
-    transition: 0.3s ease;
-    border: 1px solid transparent;
-    background-color: yellow;
-    box-shadow: 0px 0px 10px yellow;
-  }
-`;*/

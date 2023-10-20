@@ -15,7 +15,7 @@ const ExpandMenu = ({ route }) => {
       <MenuButton onClick={toggleMenu}>
         {route.name} {isMenuOpen ? <FaAngleDown /> : <FaAngleRight />}
       </MenuButton>
-      <SubRoutesContainer isOpen={isMenuOpen}>
+      <SubRoutesContainer isOpen={!isMenuOpen}>
         {route.subRoutes.map((subRoute) => (
           <SubRoute to={subRoute.link} key={subRoute.name}>
             {subRoute.name}
@@ -39,7 +39,8 @@ const SMenu = styled.div`
 `;
 
 const MenuButton = styled.div`
-  font-size: 2.5rem;
+  color: rgb(24, 65, 109);
+  font-weight: 600;
   padding: 0.5rem;
   display: flex;
   align-items: center;
@@ -48,7 +49,7 @@ const MenuButton = styled.div`
 
 const SubRoute = styled(Link)`
   text-decoration: none;
-  color: black;
+  color: rgb(24, 65, 109);
   padding: 0.5rem;
-  font-size: 2rem;
+  /*font-size: 2rem;*/
 `;

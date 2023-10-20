@@ -7,242 +7,241 @@ import styled from "styled-components";
 import placeholder from "../assets/icons/img_placeholder.png";
 
 function Blog() {
-return (
-<BlogSection>
-<div className="section__title">
-<h2>What's new?</h2>
-</div>
-<div className="blogs">
-<div className="blogs__blog">
-<div className="blog__img-wrap">
-<figure>
-<img src={placeholder} alt="Blog image" />
-</figure>
-</div>
-<div className="blog__headline-wrap">
-<h2 className="blog__title">Post Title</h2>      
-<div className="blog__description">
-<p>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-et voluptates, natus non optio velit dolorum repudiandae excepturi
-quidem illo error qui nemo sit provident dolorem recusandae nobis,
-eius tenetur.
-</p>
-</div>
+  return (
+    <BlogSection>
+      <div className="section__title">
+        <h2>What's new?</h2>
+      </div>
+      <div className="blogs">
+        <div className="blogs__blog">
+          <div className="blog__img-wrap">
+            <figure>
+              <img src={placeholder} alt="Blog image" />
+            </figure>
+          </div>
+          <div className="blog__headline-wrap">
+            <h2 className="blog__title">Post Title</h2>
+            <div className="blog__description">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Explicabo et voluptates, natus non optio velit dolorum
+                repudiandae excepturi quidem illo error qui nemo sit provident
+                dolorem recusandae nobis, eius tenetur.
+              </p>
+            </div>
 
-<a href="" className="blog__btn">
-Read more <RiArrowRightFill />
-</a>
-</div>
-</div>
+            <a href="" className="blog__btn">
+              Read more <RiArrowRightFill />
+            </a>
+          </div>
+        </div>
 
-<div className="blogs__blog">
-<div className="blog__img-wrap">
-<figure>
-<img src={placeholder} alt="Blog image" />
-</figure>
-</div>
-<div className="blog__headline-wrap">
-<h2 className="blog__title">Post Title</h2>
-          
-<div className="blog__description">
-<p>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-et voluptates, natus non optio velit dolorum repudiandae excepturi
-quidem illo error qui nemo sit provident dolorem recusandae nobis,
-eius tenetur.
-</p>
-</div>
-<a href="" className="blog__btn">
-Read more <RiArrowRightFill />
-</a>
-</div>
-</div>
-</div>
+        <div className="blogs__blog">
+          <div className="blog__img-wrap">
+            <figure>
+              <img src={placeholder} alt="Blog image" />
+            </figure>
+          </div>
+          <div className="blog__headline-wrap">
+            <h2 className="blog__title">Post Title</h2>
 
-<div className="see__all">
-<a href="/all blogs">
-{" "}
-<LuAsterisk />
-<LuAsterisk />
-See More
-<LuAsterisk />
-<LuAsterisk />
-</a>
-</div>
-</BlogSection>
-);
+            <div className="blog__description">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Explicabo et voluptates, natus non optio velit dolorum
+                repudiandae excepturi quidem illo error qui nemo sit provident
+                dolorem recusandae nobis, eius tenetur.
+              </p>
+            </div>
+            <a href="" className="blog__btn">
+              Read more <RiArrowRightFill />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="see__all">
+        <a href="/all blogs">
+          {" "}
+          <LuAsterisk />
+          <LuAsterisk />
+          See More
+          <LuAsterisk />
+          <LuAsterisk />
+        </a>
+      </div>
+    </BlogSection>
+  );
 }
 const BlogSection = styled.section`
-min-height: 100vh;
-padding: 2.5rem 4rem;
+  min-height: 100vh;
+  padding: 2.5rem 4rem;
 
-.section__title h2 {
-color: #f8760b;
-text-align: center;
-font-size: 36px;
-margin-block-start: 2.5rem;
-margin-block-end: 7.5rem;
-text-transform: uppercase;
-}
+  .section__title h2 {
+    color: #f8760b;
+    text-align: center;
+    font-size: 36px;
+    margin-block-start: 2.5rem;
+    margin-block-end: 7.5rem;
+    text-transform: uppercase;
+  }
 
-.section__title h2::after {
-content: "";
-display: block;
-width: 3.5em;
-margin: 0.25em auto 0.65em;
-border-top-style: dashed;
-border-top-width: 0.065em;
-border-top-color: #18416d;
-opacity: 0.75;
-/*height: -1.95em;*/
-}
+  .section__title h2::after {
+    content: "";
+    display: block;
+    width: 3.5em;
+    margin: 0.25em auto 0.65em;
+    border-top-style: dashed;
+    border-top-width: 0.065em;
+    border-top-color: #18416d;
+    opacity: 0.75;
+    /*height: -1.95em;*/
+  }
 
-.blogs {
-display: grid;
-gap: 10rem;
+  .blogs {
+    display: grid;
+    gap: 10rem;
 
-&__blog {
-display: flex;
-justify-content: center;
-gap: 9.5rem;
+    &__blog {
+      display: flex;
+      justify-content: center;
+      gap: 9.5rem;
 
-.blog__img-wrap {
-width: 300px;
-display: flex;
+      .blog__img-wrap {
+        width: 300px;
+        display: flex;
 
-figure {
-margin: auto;
-img {
-display: block;
-object-fit: contain;
-width: 100%;
-height: 100%;
-}
-}
-}
+        figure {
+          margin: auto;
+          img {
+            display: block;
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
 
-.blog__headline-wrap {
-width: 350px;
-display: flex;
-flex-direction: column;
-gap: 2rem;
+      .blog__headline-wrap {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
 
-.blog__title {
-color: #18416d;
-}
+        .blog__title {
+          color: #18416d;
+        }
 
-.blog__description {
-display: -webkit-box;
--webkit-box-orient: vertical;
--webkit-line-clamp: 5;
--moz-box-orient: vertical;
--moz-line-clamp: 5;
-box-orient: vertical;
-line-clamp: 5;
-overflow: hidden;
-p{
-    line-height: 1.5;
-    font-size: 18px; 
-}
-}
+        .blog__description {
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 5;
+          -moz-box-orient: vertical;
+          -moz-line-clamp: 5;
+          box-orient: vertical;
+          line-clamp: 5;
+          overflow: hidden;
+          p {
+            line-height: 1.5;
+            font-size: 18px;
+          }
+        }
 
-.blog__btn {
-padding: 0.75rem 2rem;
-color: #ffffff;
-text-decoration: none;
-background-color: #17aa97;
-border-color: #17aa97;
-border-radius: 2rem;
-border-style: solid;
-border-width: 2px;
-width: fit-content;
-display: flex;
-gap: 0.5rem;
-}
-}
-}
+        .blog__btn {
+          padding: 0.75rem 2rem;
+          color: #ffffff;
+          text-decoration: none;
+          background-color: #17aa97;
+          border-color: #17aa97;
+          border-radius: 2rem;
+          border-style: solid;
+          border-width: 2px;
+          width: fit-content;
+          display: flex;
+          gap: 0.5rem;
+        }
+      }
+    }
 
-&__blog:nth-child(2) {
-flex-direction: row-reverse;
-}
-}
+    &__blog:nth-child(2) {
+      flex-direction: row-reverse;
+    }
+  }
 
-.see__all {
-display: flex;
-padding-block-start: 50px;
+  .see__all {
+    display: flex;
+    padding-block-start: 50px;
 
-a {
-display: flex;
-margin: auto;
-text-decoration: none;
-padding: 0.75rem 2rem;
-background-color: #f8760b;
-color: #ffffff;
-border-radius: 2rem;
-font-weight: 600;
-}
-}
+    a {
+      display: flex;
+      margin: auto;
+      text-decoration: none;
+      padding: 0.75rem 2rem;
+      background-color: #f8760b;
+      color: #ffffff;
+      border-radius: 2rem;
+      font-weight: 600;
+    }
+  }
 
+  @media screen and (max-width: 425px) {
+    .blogs {
+      &__blog {
+        flex-direction: column;
+        gap: 2rem;
 
-@media screen and (max-width: 425px) {
-.blogs {
-&__blog {
-flex-direction: column;
-gap: 2rem;
+        .blog__img-wrap {
+          width: 300px;
+          display: flex;
 
-.blog__img-wrap {
-width: 300px;
-display: flex;
+          figure {
+            margin: auto;
+            img {
+              display: block;
+              object-fit: contain;
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
 
-figure {
-margin: auto;
-img {
-display: block;
-object-fit: contain;
-width: 100%;
-height: 100%;
-}
-}
-}
+        .blog__headline-wrap {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
 
-.blog__headline-wrap {
-width: 100%;
-display: flex;
-flex-direction: column;
-gap: 2rem;
+          .blog__title {
+            color: #18416d;
+          }
 
-.blog__title {
-color: #18416d;
-}
-
-/*.blog__description {
+          /*.blog__description {
 line-height: 1.25;
 font-size: 18px;
 }*/
 
-.blog__btn {
-padding: 0.75rem 2rem;
-color: #ffffff;
-text-decoration: none;
-background-color: #17aa97;
-border-color: #17aa97;
-border-radius: 2rem;
-border-style: solid;
-border-width: 2px;
-width: fit-content;
-display: flex;
-gap: 0.5rem;
-}
-}
-}
+          .blog__btn {
+            padding: 0.75rem 2rem;
+            color: #ffffff;
+            text-decoration: none;
+            background-color: #17aa97;
+            border-color: #17aa97;
+            border-radius: 2rem;
+            border-style: solid;
+            border-width: 2px;
+            width: fit-content;
+            display: flex;
+            gap: 0.5rem;
+          }
+        }
+      }
 
-&__blog:nth-child(2) {
-flex-direction: column;
-gap: 2rem;
-}
-}
-}
+      &__blog:nth-child(2) {
+        flex-direction: column;
+        gap: 2rem;
+      }
+    }
+  }
 `;
 
 export default Blog;
