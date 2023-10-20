@@ -26,18 +26,8 @@ h1,h2,h3,h4,h5,h6{
 
 html,body{
   font-family: 'Roboto', sans-serif;
-  /*font-size: 62.5%;
-
-  @media (max-width: 768px) {
-    font-size:50%;
-  }
-  @media (max-width: 450px) {
-    font-size:40%;
-  }*/
 }
-/*body{
-  font-size: 1.6rem;
-}*/
+
 
 `;
 

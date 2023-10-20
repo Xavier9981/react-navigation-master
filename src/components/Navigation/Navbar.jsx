@@ -1,6 +1,6 @@
 /** @format */
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect,useState  } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import Menu from "./Menu";
@@ -27,8 +27,8 @@ const Navbar = ({ toggleDrawer, routes, navbarOpen, setNavbarOpen }) => {
     }, [])
   
   return (
-    <NavWrapper>
-      <nav className={`${show && 'nav__blue'}`}>
+    <SNavbar>
+      <nav className={`nav ${show && 'nav__blue'}`}>
         <NavContainer>
           <DrawerButton onClick={toggleDrawer}>
             <div
@@ -59,7 +59,7 @@ const Navbar = ({ toggleDrawer, routes, navbarOpen, setNavbarOpen }) => {
           </RightNav>
         </NavContainer>
       </nav>
-    </NavWrapper>
+    </SNavbar>
   );
 };
 
@@ -114,16 +114,15 @@ const DrawerButton = styled.button`
   }
 `;
 
-const NavWrapper = styled.div`
-  nav{
-    background-color: #ffffff;
-    position: fixed;
-    top: 0;
-    z-index: 9999;
-  }
+const SNavbar = styled.div`
+  
+ /*position: sticky;
+  top: 0;
+  z-index: 9999;*/
 
   .nav{
-    height:30px;
+    background-color: #ffffff;
+    /*height:30px;*/
     width: 100%;
     position:fixed;
     top:0;
